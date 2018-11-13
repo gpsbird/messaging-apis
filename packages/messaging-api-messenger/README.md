@@ -3500,6 +3500,30 @@ client.getSubscriptions({
 });
 ```
 
+## `getPageSubscription`
+
+Get the current page subscriptions setted up on your app.
+
+| Param        | Type     | Description       |
+| ------------ | -------- | ----------------- |
+| access_token | `String` | App access token. |
+
+Example:
+
+```js
+client.getPageSubscription({
+  access_token: APP_ACCESS_TOKEN,
+});
+```
+
+Or provide app id and app secret instead of app access token:
+
+```js
+client.getPageSubscription({
+  access_token: `${APP_ID}|${APP_SECRET}`,
+});
+```
+
 <br />
 
 ## `getPageInfo`
